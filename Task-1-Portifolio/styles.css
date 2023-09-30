@@ -5,7 +5,7 @@ body, h1, h2, h3, p, ul, li {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Define the color palette */
+/* color palette */
 :root {
   --color-primary: #C4DDFF;
   --color-secondary: #7FB5FF;
@@ -19,10 +19,9 @@ body{
   background-color: var(--color-secondary);
   width: 100%;
 }
-/* Style the header and navigation */
+/*header and navigation */
 header {
   background-color: var(--color-tertiary);
-  /* color: white; */
   padding: 10px;
   display: flex;
   justify-content:space-between;
@@ -39,7 +38,6 @@ header h2{
   margin-right: 6rem ;
 }
 .navbar ul {
-  /* color:var(--color-primary); */
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -61,8 +59,6 @@ header h2{
 .navbar ul li a:hover{
   color:var(--color-background);
   text-decoration-line: underline;
-  /* transform: scale(1.2);
-  transition-delay: 0.5s; */
 }
 .navbar ul li a:active{
   color:#1114a9;
@@ -71,7 +67,7 @@ main {
   background-color: var(--color-primary);
   color:#1114a9;
 }
-
+/* home */
 .home{
   
 }
@@ -89,12 +85,11 @@ main {
   width: 70%;
 }
 .home-content .right img{
-  /* margin:1em ; */
   width:100%;
   height: 60%;
 }
-/* s */
-/* #about  */
+
+/* common stles for other sections - about,css,i  */
 .section {
   margin: 5em;
 }
@@ -131,7 +126,6 @@ main {
 .subtitle{
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  /* color:var(--color-secondary); */
 }
 .section .experience .right{
   color:var(--color-tertiary)
@@ -160,6 +154,7 @@ main {
 form {
   display: block;
 }
+/* about me - skills*/
 .skills ul{
   list-style: none;
   
@@ -189,6 +184,7 @@ form {
 .skills ,.experience ,.education{
   margin-top: 5rem;
 }
+/* about - me education */
 .education .left{
   margin:0;
 }
@@ -214,10 +210,6 @@ form {
 .cont{
   padding-top: 3em;;
 }
-
-/* * {
-  box-sizing: border-box;
-} */
  hr{
   background:#001D6E;
   height: .5em;
@@ -228,7 +220,7 @@ form {
   justify-content: space-around;
   margin-top:7em ;
 }
-
+/* project cards */
 .card {
   width: 280px;
   height: 360px;
@@ -313,12 +305,11 @@ body {
   background: #59abe3;
   margin: 0;
 }
+/* contact me form */
 .form {
-  /* width: ; */
   height: 540px;
   background: var(--color-background);
   border-radius: 8px;
-  /* box-shadow: 0 0 40px -10px #000; */
   margin: calc(50vh - 220px) auto;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
@@ -398,9 +389,8 @@ body{
 .experience .right p{
   margin-top: 1em;
 }
+/* custoom styles for my pic */
 .section .my-pic{
-  /* width: 30%; */
-  /* border-radius: 20px; */
   width: 100em;
   height: 2em;
   margin-right: 5rem;
