@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S O L V E X</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="Calculate.js"></script>
-</head>
-<body onload="handleMode()">
-  <div class="container">
-    <div class="calculator">
-      <form>
-        <div class="header">
-          <div class="model">
-            <label><p><strong><p style="font-size: 1.2rem;">S O L V E X</p></strong><p>fx-018CS PLUS</p>Natural-V.P.A.M</p></label>
-          </div>
-          <div class="solar">
-            <input type="text" name="solar-cell" disabled>
-          </div>
-        </div>
-        <div class="modes">
-          <input type="text" name="modes" id="modes" readonly>
-        </div>
-        <div class="display">
-          <input type="text" name="display" id="display" readonly>
-        </div>
-        <div class="advanced-calculator">
-          <div>
-            <input type="button" value="DEG" onclick="handleDegree()">
-            <input type="button" value="HYP" onclick="handleHyper()">
-            <input type="button" value="INV" onclick="handleInverse()">
-            <input type="button" value="," onclick="display.value += ','">
-            <input type="button" value="FIX" onclick="handleFix()">
-          </div>
-          <div>
-            <input type="button" value="nCr" onclick="display.value += 'C(' ">
-            <input type="button" value="nPr" onclick="display.value += 'P(' ">
-            <input type="button" value="fact" onclick="display.value += 'fact(' ">
-            <input type="button" value="log" onclick="display.value += 'log(' ">
-            <input type="button" value="ln" onclick="display.value += 'ln(' ">
-          </div>
-          <div>
-            <input type="button" value="sin" onclick="handleTrigonometric('sin')">
-            <input type="button" value="cos" onclick="handleTrigonometric('cos')">
-            <input type="button" value="tan" onclick="handleTrigonometric('tan')">
-            <input type="button" value="(" onclick="display.value += '(' ">
-            <input type="button" value=")" onclick="display.value += ')' ">
-          </div>
-        </div>
-        <div class="basic-calculator">
-          <div>
-            <input type="button" value="7" onclick="display.value += '7' ">
-            <input type="button" value="8" onclick="display.value += '8' ">
-            <input type="button" value="9" onclick="display.value += '9' ">
-            <input type="button" value="AC" onclick="display.value = '' " class="clear">
-            <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0,-1)" class="clear">
-          </div>
-          <div>
-            <input type="button" value="4" onclick="display.value += '4' ">
-            <input type="button" value="5" onclick="display.value += '5' ">
-            <input type="button" value="6" onclick="display.value += '6' ">
-            <input type="button" value="*" onclick="display.value += '*' " class="operator">
-            <input type="button" value="/" onclick="display.value += '/' " class="operator">
-          </div>
-          <div>
-            <input type="button" value="1" onclick="display.value += '1' ">
-            <input type="button" value="2" onclick="display.value += '2' ">
-            <input type="button" value="3" onclick="display.value += '3' ">
-            <input type="button" value="+" onclick="display.value += '+' " class="operator">
-            <input type="button" value="-" onclick="display.value += '-' " class="operator">
-          </div>
-          <div>
-            <input type="button" value="0" onclick="display.value += '0' ">
-            <input type="button" value="." onclick="display.value += '.' " class="operator">
-            <input type="button" value="10^x" onclick="display.value += '*10**' " class="operator">
-            <input type="button" value="x^y" onclick="display.value += '**'" class="operator">
-            <input type="button" value="=" onclick="compute()" class="equal operator">
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Landing Page Travel Site</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <h1 class="logo">ADVENTURE</h1>
+            <ul class="nav-links">
+                <li ><a href="#">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li class = "ctn"  ><a href="#"></a>Contact us</li>
+            </ul>
+            <img src="img/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+        <header>
+            <div class="header-content">
+                <h2>
+                    Explore the World's Best Treks
+                </h3>
+                <div class="line"></div>
+                <h1>YOUR ADVENTURE AWAITS YOU!</h1>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+        </header>
+        <!-- events section -->
+        <section id = "events" class="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="img/img1.png" alt="">
+                    <h4>Everest Camp Trek</h4>
+                    <p>Embark on the ultimate adventure of a lifetime with our Everest trek! Conquer the world's highest peak, witness breathtaking landscapes, and embrace the challenge. Join us on this epic journey </p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="img/img2.png" alt="">
+                    <h4>Mullayanagiri</h4>
+                    <p>Discover the magic of Mullayanagiri with our guided trek! Ascend Karnataka's highest peak, immerse in lush Western Ghats beauty, and experience nature's serenity. Join us for an unforgettable mountain adventure </p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section> 
+        <!-- explore section -->
+        <section id="explore" class="explore">
+            <div class="explore-content">
+                <h1>EXPLORE THE WORLD</h1>
+                <div class="line"></div>
+                <p>Explore the uncharted wilderness with our experienced guides. Dive into pristine forests, conquer rugged trails, and unveil hidden gems. Let your wanderlust lead you to unforgettable adventures and untouched natural wonders</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </section>
+        <!-- tours section -->
+        <section id="tours" class="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>UPCOMING TOURS & THEIR DESTINATIONS</h1>
+                    <div class="line"></div>
+                    <p>Explore an array of captivating destinations with us. From mountain treks to jungle safaris, cultural escapades to coastal getaways, adventure awaits you at every turn. Start your journey to unforgettable experiences today</p>
+                    <a href="" class="ctn">Learn More</a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="img/img3.png" alt="">
+                        <img src="img/img4.png" alt="">
+                        <img src="img/img5.png" alt="">
+                        <img src="img/img6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p><strong>CONTACT DETAILS:</strong></p>
+            <p>Address: #123, Fifth Main, JP Nagar , Mysuru,India | Email: contact@me.com </p>
+            <p>Copyright &copy Outdoor Adventure</p>
+        </section>
+        <script  async defer>
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuBtn.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
 </html>
