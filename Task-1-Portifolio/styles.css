@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
@@ -22,7 +22,6 @@ body{
 /* Style the header and navigation */
 header {
   background-color: var(--color-tertiary);
-  /* color: white; */
   padding: 10px;
   display: flex;
   justify-content:space-between;
@@ -39,7 +38,6 @@ header h2{
   margin-right: 6rem ;
 }
 .navbar ul {
-  /* color:var(--color-primary); */
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -61,8 +59,6 @@ header h2{
 .navbar ul li a:hover{
   color:var(--color-background);
   text-decoration-line: underline;
-  /* transform: scale(1.2);
-  transition-delay: 0.5s; */
 }
 .navbar ul li a:active{
   color:#1114a9;
@@ -86,13 +82,10 @@ main {
   width: 70%;
 }
 .home-content .right img{
-  /* margin:1em ; */
   width:100%;
   max-width: 70vmax;
   height: 80vh;
 }
-/* s */
-/* #about  */
 .section {
   margin: 5em;
 }
@@ -129,7 +122,6 @@ main {
 .subtitle{
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  /* color:var(--color-secondary); */
 }
 .section .experience .right{
   color:var(--color-tertiary)
@@ -209,10 +201,6 @@ form {
 .cont{
   padding-top: 3em;;
 }
-
-/* * {
-  box-sizing: border-box;
-} */
  hr{
   background:#001D6E;
   height: .5em;
@@ -309,11 +297,9 @@ body {
   margin: 0;
 }
 .form {
-  /* width: ; */
   height: 540px;
   background: var(--color-background);
   border-radius: 8px;
-  /* box-shadow: 0 0 40px -10px #000; */
   margin: calc(50vh - 220px) auto;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
