@@ -39,12 +39,16 @@ body,html{
 
 }
 .nav-links li a{
-    color:#fc036b;
+    color:aliceblue;
+    text-decoration: none;
 }
+
 .nav-links li a:visited{
     color:#fc036b;   
 }
 .nav-links li a:hover{
+    color: #fc036b;
+    text-decoration: none;
     text-decoration: underline;
     transform: scale(1.2) ;
 }
@@ -52,7 +56,9 @@ body,html{
     color: azure;
     font-size: bold;
 }
-
+.nav-links .ctn{
+    color: white;
+}
 header {
     width: 100vw;
     height: 100vh;
